@@ -1,0 +1,30 @@
+ public int getIndexOfValue(int[] enteredArray, int valueToGet) {
+        int result = -1;
+
+        for(int i = 0; i < enteredArray.length; i++){
+            if (enteredArray[i] == valueToGet){
+                result = i;
+                return result;
+            }
+        }
+        return result;
+    }
+
+
+    public int[] getSmallestToLargest(int[] arr){
+
+        for(int i = 0; i < arr.length ; i++) {
+
+            for (int j = 0; j < arr.length - 1; j++) {
+                int valueOfCurrentNumber = arr[j];
+                int valueOfNextNumber = arr[j + 1];
+
+                if (valueOfCurrentNumber > valueOfNextNumber) {
+                    arr[j] = valueOfNextNumber;
+                    arr[j + 1] = valueOfCurrentNumber;
+                }
+            }
+        }
+
+        return arr;
+    }
