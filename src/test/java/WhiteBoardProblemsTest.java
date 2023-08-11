@@ -46,4 +46,18 @@ public class WhiteBoardProblemsTest {
         Assert.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
     }
 
+    @Test
+    public void addElementToArrayTest2(){
+        //Given
+        WhiteBoardProblems wBP = new WhiteBoardProblems();
+        int[] enteredArray = new int[]{7,3,1,10,12};
+        int[] expected = new int[]{7, 3, 1, 17, 10, 12};
+
+        //When
+        int[] actual = wBP.addElementToArray(enteredArray, 17, 3);
+
+        //Then
+        Assert.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
+    }
+
 }
