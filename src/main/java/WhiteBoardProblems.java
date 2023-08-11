@@ -11,7 +11,7 @@ public class WhiteBoardProblems {
     }
 
 
-    public int[] addElementToArray(int[] array, int intToAddToArray, int indexToPlaceNewInt){
+    public int[] addElementToArray(int[] array, int intToAddToArray, int indexToPlaceNewInt){ // Add to specific index of an array
         return new int[0];
     }
 
