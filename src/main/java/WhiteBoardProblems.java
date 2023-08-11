@@ -11,5 +11,8 @@ public class WhiteBoardProblems {
     }
 
 
+    public int[] addElementToArray(int[] array, int intToAddToArray, int indexToPlaceNewInt){
+        return new int[0];
+    }
 
 }
