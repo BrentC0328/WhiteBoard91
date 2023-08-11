@@ -15,4 +15,12 @@ public class WhiteBoardProblems {
         return new int[0];
     }
 
+
+
+    //This second one is the same as the first, except restricted by not being able to use conditionals:
+    //RESTRICTION: NO IF/ELSE STATEMENTS IN YOUR SOLUTION.
+    public int[] addElementToArrayAgain(int[] array, int intToAddToArray, int indexToPlaceNewInt){ // Add to specific index of an array
+        return new int[0];
+    }
+
 }
