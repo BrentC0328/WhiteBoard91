@@ -1,6 +1,6 @@
 public class WhiteBoardProblems {
 
-    public int getIndexOfValue(int[] enteredArray, int valueToGet) {
+    public int getIndexOfValue(int[] enteredArray, int valueToGet) { //Linear search
         int result = -1;
 
         for(int i = 0; i < enteredArray.length; i++){
@@ -32,7 +32,7 @@ public class WhiteBoardProblems {
         }
 
 
-    public int[] addElementToArray(int[] array, int intToAddToArray, int indexToPlaceNewInt){
+    public int[] addElementToArray(int[] array, int intToAddToArray, int indexToPlaceNewInt){ // Add to specific index of an array
 
         int[] result = new int[array.length + 1];
         int index = 0;
