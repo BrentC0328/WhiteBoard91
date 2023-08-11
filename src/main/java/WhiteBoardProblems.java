@@ -49,19 +49,28 @@ public class WhiteBoardProblems {
         }
         return result;
 
-        //Joe's solution (also works);
-        //    int[] result = new int[array.length + 1];
-//
-//        for (int i = 0; i < indexToPlaceNewInt; i++) {
-//            result[i] = array[i];
-//        }
-//
-//        result[indexToPlaceNewInt] = intToAddToArray;
-//
-//        for (int i = indexToPlaceNewInt + 1; i < result.length; i++){
-//            result[i] = array[i - 1];
-//        }
+
     }
+
+    //This second one is the same as the first, except restricted by not being able to use conditionals:
+    //RESTRICTION: NO IF/ELSE STATEMENTS IN YOUR SOLUTION.
+    public int[] addElementToArrayAgain(int[] array, int intToAddToArray, int indexToPlaceNewInt){ // Add to specific index of an array
+        //Joe's solution;
+            int[] result = new int[array.length + 1];
+
+        for (int i = 0; i < indexToPlaceNewInt; i++) {
+            result[i] = array[i];
+        }
+
+        result[indexToPlaceNewInt] = intToAddToArray;
+
+        for (int i = indexToPlaceNewInt + 1; i < result.length; i++){
+            result[i] = array[i - 1];
+        }
+
+        return result;
+    }
+
 
 
 }
